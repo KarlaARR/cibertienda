@@ -1,6 +1,7 @@
 h1{
 	color: #3b257c;
 }
+
 img{
 	width: 200px;
 	height: 200px;
@@ -8,6 +9,11 @@ img{
 td{
 	text-align: center;
 	font-style: italic;
+}
+  nav{
+	margin:     0 auto;
+		width:      940px;
+		list-style: none;
 }
 nav ul {
 		margin:     0 auto;
