@@ -1,3 +1,4 @@
+
 input{
 	font-style: italic;
 }
@@ -14,7 +15,8 @@ h4{
 	font-size: 18px;
 	color: #777;
 }
-header, footer, section,nav{
+
+header, footer, section, nav, aside{
 	display: block;
 }
 img{
@@ -26,60 +28,99 @@ td{
 	font-style: italic;
 	color: #777;
 }
+
+body{
+	padding-left: 15em;
+}
+
 p {
-	padding-bottom: 1px;
+	padding-bottom: 22px;
 	font-style: italic;
 }
 hr{
 	width: 75%;
 	color: #bc6fa1;
 }
+/*NAVEGACIÓN*/
 nav ul {
-		margin:     0 auto;
-		width:      940px;
-		list-style: none;
-	}
-
-		nav ul li {
-			float: left;
-		}
+	margin:     0 auto;
+	width:      940px;
+	list-style: none;
+}
+nav ul li {
+	float: left;
+}
 		
-			nav ul li a {
-				display:         block;
-				margin-right:    30px;
-				width:           280px;
-				font-size:       18px;
-				line-height:     44px;
-				text-align:      center;
-				text-decoration: none;
-				color:           #777;
-			}
+nav ul li a {
+	display:         block;
+	margin-right:    30px;
+	width:           280px;
+	font-size:       18px;
+	line-height:     44px;
+	text-align:      center;
+	text-decoration: none;
+	color:           purple;
+}
+/*BARRA LATERAL*/
+ul.navbar {  
+	list-style-type: none;     
+	padding: 0;     
+	margin: 0;   
+	position: absolute;     
+	top: 8em;     
+	left: 0em;     
+	width: 6em   
+}     
+ul.navbar li {   
+	font-style: italic;       
+	margin: 0.01em;     
+	padding: 0.3em;       
+}    
+/*PIE DE PÁGINA*/		
 footer {
 	position:   absolute;
 	left:       0;
 	width:      100%;
+	padding-left: 5em;
 	background: #fcd0e5;
 }
+
 footer div {
 	display: table;
 	margin:  0 auto;
-	padding: 44px 0;
+	padding: 50px 0;
 	width:   940px;
-	color:   #777;
+	color:   #AEB6BF;
 }
 footer div section {
 	display: table-cell;
-	width:   300px;
+	width:   400px;
 }
 footer div #Acerca {
-	padding-right: 20px;
+	font-style: italic;
+	text-align: center;
+}
+
+footer h2 {
+	color:#EBEDEF;
+}
+	
+footer a {
+	color: #999;
+}
+	
+footer ul {
+	margin:     0 0 0 40px;
+	list-style: square;
+	color:      #565656;
+  font-style: italic;
+}
+	
+footer ul li a {
+	display: block;
 }
 footer h3 {
 	color:#777;
 	font-style: italic;
 	font-size: 23px;
-}
-
-footer ul{
-	font-style: italic;
 }
