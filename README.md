@@ -20,4 +20,5 @@ pasar las variables
 Amixes ya agregue la ropa de las mujeres y los accesorios
 <br>
 Solo falta la ropa de hombre que Béjar iba a ponerts
-
+<br>ya le puse una playera de hombre por ahí 
+esque me gustó cx
