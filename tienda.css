@@ -15,7 +15,6 @@ h4{
 	font-size: 18px;
 	color: #777;
 }
-
 header, footer, section, nav, aside{
 	display: block;
 }
@@ -123,4 +122,48 @@ footer h3 {
 	color:#777;
 	font-style: italic;
 	font-size: 23px;
+}
+
+#intro {
+	position:   relative;
+	margin-top: 10px;
+	padding:    44px;
+	background: #fcd0e5 url("images/intro_background.png") repeat-x;
+	
+	/* Background-size not implemented yet */
+	-webkit-background-size: 100%;
+	-o-background-size:      100%;
+	-khtml-background-size:  100%;
+
+	
+	/* Border-radius not implemented yet */
+	-moz-border-radius:    22px;
+	-webkit-border-radius: 22px;
+}
+
+#intro h4, #intro p {
+	position: relative;
+	z-index:  9999;
+	width:    336px;
+}
+	
+#intro h4 {
+	padding:     0 0 22px 0;
+	font-weight: normal;
+	color:       #8a898a;
+	font-size: 20px;
+}
+	
+
+	
+#intro img {
+	position: absolute;
+	top:      0;
+	right:    0;
+	width:    653px;
+	height:   100%;
+
+	/* Border-radius not implemented yet */
+	-moz-border-radius:    22px;
+	-webkit-border-radius: 22px;
 }
