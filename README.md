@@ -4,7 +4,7 @@ Las referencias de las otra páginas supongo que las tendremos que cambiar cuand
 <br>
 Imagen en recuadro (Listo)<br>
 Cambiar el sidebar <br>
-Modidficar Footer y agregar la referencia a cada sección<br>
+Modidficar Footer<br>
 Hacer la secciones(Listo)<br>
 Comentarios<br>
 Pay pal<br>
