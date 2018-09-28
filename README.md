@@ -16,3 +16,8 @@ pasar las variables
 
 <br> hola karlita 
 
+<br>
+Amixes ya agregue la ropa de las mujeres y los accesorios
+<br>
+Solo falta la ropa de hombre que Béjar iba a ponerts
+
