@@ -1,69 +1,58 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Productos</title>
-	<link rel="stylesheet" type="text/css" href="tienda.css">
-	<script type="text/javascript">
-		function sure(Producto,Precio,Cantidad) {
-			if (Cantidad<=0)
-				alert("Cantidad incorrecta");
-			if (confirm("¿Agregar "+Cantidad+" "+Producto+" al carrito?")) {
-			}
-		}
-	</script>
-</head>
-<body>
-	<header>
-		<center>
-			<h1 >ReViBe</h1>
-		</center>
-	</header>
-	<nav>
-		<!--Navegación-->
-		<ul >
-			<li><a href="">Productos</a></li>
-			<li><a href="file:///H:/EstadoCarrito.html">Carrito</a></li>
-			<li><a href="file:///H:/orden.html">Orden de compra</a></li>
-		</ul>
-		<ul class="navbar">    
-			<li><a href="">Página Principal</a>   
-			<li><a href="#losMens">Hombre</a>   
-			<li><a href="#lasWomens">Mujer</a> 
-			<li><a href="#losAccesorys">Accesorios</a> 
-		</ul> 
-	</nav>
-	<br>
-	<br>
-	<hr>
-	<!--Rectangulo con la imagen del archivo de las flores-->
-	<section id = "intro">
+	<head>
+		<meta charset="utf-8">
+		<title> Productos </title>
+		<link rel="stylesheet" href="tienda.css" type="text/css" media="screen" />
+	</head>
+	<body>
+		<header>
+			<center>
+				<h1 style="font-size: 70px"> ReViBe </h1>
+			</center>
+		</header>
+
+		<nav>
+			<!--Navegacion-->
+			<ul align = "center">
+				<li ><a href="#">Productos</a></li>
+				<li><a href="file:///C:/Users/Karla/Documents/programas/Html/EstadoCarrito.html">Carrito</a></li>
+				<li><a href="http://www.escom.ipn.mx/">ESCOM</a></li>
+			</ul>
+		</nav>
+		<br>
+		<br>
+		<hr>
+		<section id = "intro">
 			<!--Introducciòn-->
 			<header>
 				<h4><p>Bienvenido(a) a nuestra tienda online. Tenemos bastantes productos
 			que podrían interesarte. Siéntete libre de echar un vistazo.</p></h4>
 			</header>
-			<img src="ropa.jpg" alt="NickyNickyJam" width="1500" height="300"/>
+			<img src="tienda/revibe.png" alt="Bandera" width="1500" height="300"/>
 		</section>
-	<!--Aqui empieza la tabla de los productos-->
-	<center>
-		<hr >
-		<form name="productsform">
+		<br>
+		<hr>
+		<div id="content">
+			<div id="mainContent">
+				<section>
+					<form name="productsform">
 			<h2>Mujeres</h2>
 			<div id="lasWomens">
 			<table>
 				<tr><!--Aqui van los prductos junto a su informacion (5)-->
 					<td >
-						<img src="sueterrojo.jpg" >
+						<center>
+						<img src="tienda/sueterrojo.jpg" >
 						<p>Sueter rojo con rayas</p>
-						<p>$200</p>
+						<p>        $200</p>
 						<p>
 							<input TYPE="value" NAME="agregar1" VALUE="1" SIZE="3"> 
 							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter rojo con rayas','200',document.productsform.agregar1.value)">
 						</p>
 					</td>
 					<td >
-						<img src="playera.jpg" >
+						<center>
+						<img src="tienda/playera.jpg" >
 						<p>Playera Alien</p>
 						<p>$100</p>
 						<p>
@@ -72,7 +61,8 @@
 						</p>
 						</td>
 					<td>
-						<img src="pantalon.jpg">
+						<center>
+						<img src="tienda/pantalon.jpg">
 						<p>Pantalón azul</p>
 						<p>$250</p>
 						<p>
@@ -81,7 +71,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="converse.jpg">
+						<center>
+						<img src="tienda/converse.jpg">
 						<p>Converse Blancos</p>
 						<p>$600</p>
 						<p>
@@ -90,7 +81,8 @@
 						</p>
 					</td>
 					<td >
-						<img src="vestido.jpg">
+						<center>
+						<img src="tienda/vestido.jpg">
 						<p>Vestido azul</p>
 						<p>$300</p>
 						<p>
@@ -101,7 +93,8 @@
 				</tr>
 				<tr>
 					<td>
-						<img src="vrayas.jpg">
+						<center>
+						<img src="tienda/vrayas.jpg">
 						<p>Vestido de rayas</p>
 						<p>$120</p>
 						<p>
@@ -110,7 +103,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="chamarra.jpg">
+						<center>
+						<img src="tienda/chamarra.jpg">
 						<p>Chamarra</p>
 						<p>$500</p>
 						<p>
@@ -119,7 +113,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="helga.jpg">
+						<center>
+						<img src="tienda/helga.jpg">
 						<p>Playera Helga</p>
 						<p>$100</p>
 						<p>
@@ -128,7 +123,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="pants.jpg">
+						<center>
+						<img src="tienda/pants.jpg">
 						<p>Pantalón deportivo</p>
 						<p>$200</p>
 						<p>
@@ -137,7 +133,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="sueter.jpg">
+						<center>
+						<img src="tienda/sueter.jpg">
 						<p>Sueter Gris</p>
 						<p>$200</p>
 						<p>
@@ -154,7 +151,8 @@
 			<table>
 				<tr>
 					<td>
-						<img src="arnold.jpg">
+						<center>
+						<img src="tienda/arnold.jpg">
 						<p>Playera arnold</p>
 						<p>$100</p>
 						<p>
@@ -162,17 +160,99 @@
 							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera arnold','100',document.productsform.agregar11.value)">
 						</p>
 					</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>
+						<center>
+							<img src="tienda/sueterr.jpg" >
+						<p>Sueter a rayas</p>
+						<p>$700</p>
+						<p>
+							<input TYPE="value" NAME="agregar12" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter a rayas','700',document.productsform.agregar12.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+							<img src="tienda/pantalonc.jpg" >
+						<p>Pantalón verde Militar </p>
+						<p>$600</p>
+						<p>
+							<input TYPE="value" NAME="agregar13" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pantalon Caqui','600',document.productsform.agregar13.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+							<img src="tienda/camisan.jpg" >
+						<p>Camisa negra ajustada</p>
+						<p>$500</p>
+						<p>
+							<input TYPE="value" NAME="agregar14" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Camisa Negra','500',document.productsform.agregar14.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+							<img src="tienda/teniss.jpg" >
+						<p>tenis blancos</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar15" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Sueter rojo con rayas','200',document.productsform.agregar15.value)">
+						</p>
+						</center>
+					</td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>
+						<center>
+							<img src="tienda/camiseta.jpg">
+						<p>Camiseta sin mangas</p>
+						<p>$170</p>
+						<p>
+							<input TYPE="value" NAME="agregar16" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Camiseta sin mangas','170',document.productsform.agregar16.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+							<img src="tienda/rosaa.jpg">
+						<p>Bermuda rosa</p>
+						<p>$190</p>
+						<p>
+							<input TYPE="value" NAME="agregar17" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Bermuda rosa','190',document.productsform.agregar17.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+							<img src="tienda/vino.jpg">
+						<p>Playera manga larga</p>
+						<p>$360</p>
+						<p>
+							<input TYPE="value" NAME="agregar18" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Playera Manga larga','360',document.productsform.agregar18.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+							<img src="tienda/corbata.jpg">
+						<p>Corbata piano</p>
+						<p>$200</p>
+						<p>
+							<input TYPE="value" NAME="agregar19" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Pulsera','200',document.productsform.agregar19.value)">
+						</p>
+					</td>
+					<td>
+						<center>
+						<img src="tienda/chal.jpg">
+						<p>Chaleco</p>
+						<p>$820</p>
+						<p>
+							<input TYPE="value" NAME="agregar20" VALUE="1" SIZE="3"> 
+							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Chaleco','820',document.productsform.agregar20.value)">
+						</p>
+					</td>
 				</tr>
 			</table>
 		</div>
@@ -182,7 +262,8 @@
 			<table>
 				<tr>
 					<td>
-						<img src="lentes.jpg">
+						<center>
+						<img src="tienda/lentes.jpg">
 						<p>Lentes Rosa</p>
 						<p>$54</p>
 						<p>
@@ -191,7 +272,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="reloj.jpg">
+						<center>
+						<img src="tienda/reloj.jpg">
 						<p>Reloj rosa</p>
 						<p>$200</p>
 						<p>
@@ -200,7 +282,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="gloves.jpg">
+						<center>
+						<img src="tienda/gloves.jpg">
 						<p>Guantes</p>
 						<p>$98</p>
 						<p>
@@ -209,7 +292,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="bufanda.jpg">
+						<center>
+						<img src="tienda/bufanda.jpg">
 						<p>Bufanda</p>
 						<p>$85</p>
 						<p>
@@ -218,7 +302,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="sombrero.jpg">
+						<center>
+						<img src="tienda/sombrero.jpg">
 						<p>Sombrero Negro</p>
 						<p>$150</p>
 						<p>
@@ -228,7 +313,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td><img src="gorro.jpg">
+					<td>
+						<center>
+						<img src="tienda/gorro.jpg">
 						<p>Gorro Bad</p>
 						<p>$100</p>
 						<p>
@@ -236,7 +323,8 @@
 							<input TYPE="button" NAME="cbtadd" VALUE="Agregar" onclick="sure('Gorro Bad','100',document.productsform.agregar26.value)">
 						</p></td>
 					<td>
-						<img src="aretes.jpg">
+						<center>
+						<img src="tienda/aretes.jpg">
 						<p>Conjunto de aretes</p>
 						<p>$60</p>
 						<p>
@@ -245,7 +333,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="anillo.jpg">
+						<center>
+						<img src="tienda/anillo.jpg">
 						<p>Anillo</p>
 						<p>$120</p>
 						<p>
@@ -254,7 +343,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="collar.jpg">
+						<center>
+						<img src="tienda/collar.jpg">
 						<p>Collar gigante</p>
 						<p>$190</p>
 						<p>
@@ -263,7 +353,8 @@
 						</p>
 					</td>
 					<td>
-						<img src="pulsera.jpg">
+						<center>
+						<img src="tienda/pulsera.jpg">
 						<p>Pulsera</p>
 						<p>$80</p>
 						<p>
@@ -274,25 +365,128 @@
 				</tr>
 			</table>
 		</div>
+
+
 		</form>
-	</center>
-	<footer>
-		<!--Pie de pagina-->
-		<div>
-			<section id="Acerca">
-				<header>
-					<h2>Acerca</h2>
-				</header>
-				<p>Esta tienda online fue creada en Septiembre de 2018</br>
-				Se encuentra bajo la supervisión de los estudiantes en la
-				carrera de sistemas computacionales:</p>
-				<ul>
-					<li>Béjar Iván</li>
-					<li>Reyes Karla</li>
-					<li>Vilches Galilea</li>
-				</ul>
-			</section>
+				</section>
+				<section id="comments">
+					<h3 style = 'color:#bc6fa1'>Comentarios</h3>
+					<article>
+						<header>
+							<a href="#">Sujeto_1</a> el <time datetime="2016-06-29T23:35:20+01:00">4 de Enero de 2018 a las 23:35</time>
+						</header>
+						<p>Blablablabla...</p>
+					</article>
+					<article>
+						<header>
+							<a href="#">Sujeto_2</a> el <time datetime="2016-06-29T23:40:09+01:00">21 de Octubre de 2017 a las 23:40</time>
+						</header>
+						<p>Blablablabla...</p>
+					</article>
+					<article>
+						<header>
+							<a href="#">Sujeto_3</a> el <time datetime="2016-06-29T23:59:00+01:00">16 de Diciembre de 2017 a las 23:59</time>
+						</header>
+						<p>Blablablabla...</p>
+					</article>
+				</section>
+				<form action="#" method="post">
+					<h3 style = 'color:#bc6fa1'>Enviar un comentario</h3>
+					<p>
+						<label for="name">Nombre</label>
+						<input name="name" id="name" type="text" required />
+					</p>
+					<p>
+						<label for="email">E-mail</label>
+						<input name="email" id="email" type="email" required />
+					</p>
+					<p>
+						<label for="comment">Comentario</label>
+						<textarea name="comment" id="comment" required></textarea>
+					</p>
+					<p><input type="submit" value="Publicar comentario" /></p>
+				</form>
+
+
+			</div>
+			<aside>
+				<!--Barra lateral-->
+				<section class="pos">
+					<header>
+						<h2 style = 'color:#bc6fa1'>Categor&iacute;as</h2>
+					</header>
+						<ul>
+							<li><a href="#lasWomens">Mujeres</a></li>
+							<li><a href="#losMens">Hombres</a></li>
+							<li><a href="#losAccesorys">Accesorios</a></li>
+							<li><a href="#comments">Comentarios</a></li>
+						</ul>
+					</section>
+			</aside>
 		</div>
-	</footer>
-</body>
+
+		<script type="text/javascript">
+			localStorage.clear();
+			var count=0;
+			var nomprod=new Array();
+			var costos=new Array();
+			var cant= new Array();
+		function sure(Producto,Precio,Cantidad) 
+		{
+			if (Cantidad<=0)
+				alert("Cantidad incorrecta");
+			if (confirm("¿Agregar "+Cantidad+" "+Producto+" al carrito?")) 
+			{
+				window.localStorage.setItem("co",count);
+				nomprod[count]=Producto;
+				costos[count]=Precio;
+				cant[count]=Cantidad;
+				window.localStorage.setItem('Prod',JSON.stringify(nomprod));
+				window.localStorage.setItem('Cos',JSON.stringify(costos));
+				window.localStorage.setItem('Ca',JSON.stringify(cant));
+				count=parseInt(localStorage.getItem("co"))+1;
+			}
+		}
+	</script>
+
+		<footer>
+			<!--Pie de pagina-->
+			<div>
+				<section id="about">
+					<header>
+						<h2 style="color: #d592c4">Acerca</h2>
+					</header>
+					<p style="color: #8a898a">Esta página fue creada en Septiembre 2018</br> bajo la 
+				supervisión de:
+					</p>
+					<ul>
+					<li>Iván Béjar</li>
+					<li>Karla Reyes</li>
+					<li>Galilea Vilches</li>
+				</ul>
+				</section>
+				<section id="blogroll">
+					<header>
+						<h2 style="color: #d592c4">Páginas similares</h2>
+					</header>
+					<ul>
+						<li><a href="#">UNO</a></li>
+						<li><a href="#">DOS</a></li>
+						<li><a href="#">TRES</a></li>
+					</ul>
+				</section>
+				<section id="popular">
+					<header>
+						<h2 style="color: #d592c4">Popular</h2>
+					</header>
+					<ul>
+						<li><a href="#">Presiona aqu&iacute;</a></li>
+						<li><a href="#">O aqu&iacute;</a></li>
+						<li><a href="#">Mejor aqu&iacute;</a></li>
+					</ul>
+				</section>
+			</div>
+			<h1>  </h1>
+		</footer>
+	</body>
 </html>
