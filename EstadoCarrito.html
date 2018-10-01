@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -16,25 +15,105 @@
 		<ul >
 			<li><a href="file:///C:/Users/Karla/Documents/programas/Html/carro.html">Productos</a></li>
 			<li><a href="">Carrito</a></li>
-			<li><a href="file:///C:/Users/Karla/Documents/programas/Html/orden.html">Orden de compra</a></li>
+			<li><a href="http://www.escom.ipn.mx/">ESCOM</a></li>
 		</ul>
 	</nav>
 	<br>
 	<br>
 	<hr>
+	<center>
+		<script type="text/javascript">
+			var total=0;
+			var ctotal=0;
+			//PASAR LAS VARIABLES
+			function mostrar() {
+				var nomprod=window.localStorage.getItem('Prod');
+				var costos=window.localStorage.getItem('Cos');
+				var cant=window.localStorage.getItem('Ca');
+				nomprod=JSON.parse(nomprod);
+				costos=JSON.parse(costos);
+				cant=JSON.parse(cant);
+
+				for (var j = 0; j < costos.length; j++) {
+					total=total+(parseInt(costos[j])*parseInt(cant[j]));
+					ctotal=ctotal+parseInt(cant[j]);
+				}
+
+				document.writeln("<center>")
+				document.writeln("<table>"); 
+				document.writeln("<br>");
+				document.writeln("<thead><tr><th><i> Producto</i> </th>"); 
+				document.writeln("<th><i> Precio </i></th>");
+				document.writeln("<th><i> Cantidad</i> </th>");
+				document.writeln("</tr></thead><tbody>");
+				for (var i = 0; i < nomprod.length; i++) {
+					document.writeln("<tr><td>" + nomprod[i] +"</td><td>" + costos[i] + "</td><td>" + cant[i] + "</td></tr>");
+				}
+				document.writeln("<tr><td> Total </td><td>"+total+"</td><td>"+ctotal+"</td></tr>");
+				document.writeln("</tbody></table>");
+				document.writeln("</center>");
+				window.localStorage.setItem("tpre",total);
+			}
+
+			function redirect() {
+				window.location.href = '';
+				
+			}
+
+		</script>
+	</center>
+	<br>
+	<script type="text/javascript">
+		mostrar();
+	</script>
+	<center>
+	<table >
+		<tr>
+			<td> ___________</td>
+			<td> ___________ </td>
+			<td>
+				<input type="button" name="enviar" value="Enviar" onclick="redirect()">
+			</td>
+		</tr>
+	</table>
+	</center>
+	<br>
+	<hr>
+	<br>
 	<footer>
 		<!--Pie de pagina-->
 		<div>
-			<section id="Acerca">
+			<section id="about">
 				<header>
-					<h3>Acerca</h3>
+					<h2 style="color: #d592c4">Acerca</h2>
+					</header>
+					<p style="color: #8a898a">Esta página fue creada en Septiembre 2018</br> bajo la 
+				supervisión de:
+					</p>
+					<ul>
+					<li>Iván Béjar</li>
+					<li>Karla Reyes</li>
+					<li>Galilea Vilches</li>
+				</ul>
+			</section>
+			<section id="blogroll">
+				<header>
+					<h2 style="color: #d592c4">Páginas similares</h2>
 				</header>
-				<p>Somos estudiantes con un proyecto de tienda online.</p> 
-				<p>Nombres:</p>
 				<ul>
-					<li>Béjar Iván</li>
-					<li>Reyes Karla</li>
-					<li>Vilches Galilea</li>
+					<li><a href="#">UNO</a></li>
+					<li><a href="#">DOS</a></li>
+					<li><a href="#">TRES</a></li>
+				</ul>
+			</section>
+			<section id="opular">
+				<header>
+					<h2 style="color: #d592c4">Popular</h2>
+				</header>
+				<ul>
+					<li><a href="#">Presiona aqu&iacute;</a></li>
+					<li><a href="#">O aqu&iacute;</a></li>
+					<li><a href="#">Mejor aqu&iacute;</a></li>
 				</ul>
 			</section>
 		</div>
