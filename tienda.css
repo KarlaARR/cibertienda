@@ -1,129 +1,93 @@
 
-input{
-	font-style: italic;
-}
-h1{
-	color: #bc6fa1;
-	font-size: 40px;
-	font-style: italic;
-}
-h2{
-	color: #bc6fa1;
-	font-style: italic;
-}
-h4{
-	font-size: 18px;
-	color: #777;
-}
-header, footer, section, nav, aside{
-	display: block;
-}
-img{
-	width: 200px;
-	height: 200px;
-}
-td{
-	text-align: center;
-	font-style: italic;
-	color: #777;
+* {
+	margin:  0;
+	padding: 0;
 }
 
-body{
-	padding-left: 15em;
+/* Indica al navegador renderizar los elementos de HTML5 como bloques */
+header, footer, section, aside, nav, article {
+	display: block;
+}
+
+body {
+	margin:     0 auto;
+	padding:    22px 0;
+	width:      940px;
+}
+
+h1{
+	font-size:   40px;
+	line-height: 44px;
+	padding:     22px 0;
+	color: #bc6fa1;
+	font-style: italic;
+}
+
+h2{
+	color: #bc6fa1;
+	font-style: italic
+}
+
+h3 {
+	font-size:   18px;
+	line-height: 22px;
+	padding:     11px 0;
 }
 
 p {
 	padding-bottom: 22px;
 	font-style: italic;
 }
+
+input{
+	font-style: italic;
+}
+
+
 hr{
-	width: 75%;
 	color: #bc6fa1;
 }
-/*NAVEGACIÓN*/
-nav ul {
-	margin:     0 auto;
-	width:      940px;
-	list-style: none;
+
+aside a{
+	font-style: italic;
+	color: #8a898a;
 }
-nav ul li {
-	float: left;
-}
-		
-nav ul li a {
-	display:         block;
-	margin-right:    30px;
-	width:           280px;
-	font-size:       18px;
-	line-height:     44px;
-	text-align:      center;
-	text-decoration: none;
-	color:           purple;
-}
-/*BARRA LATERAL*/
-ul.navbar {  
-	list-style-type: none;     
-	padding: 0;     
-	margin: 0;   
-	position: absolute;     
-	top: 8em;     
-	left: 0em;     
-	width: 6em   
-}     
-ul.navbar li {   
-	font-style: italic;       
-	margin: 0.01em;     
-	padding: 0.3em;       
-}    
-/*PIE DE PÁGINA*/		
-footer {
-	position:   absolute;
+/*------------------------------
+	NAVEGACION
+------------------------------*/
+nav {
+	position: absolute;
 	left:       0;
 	width:      100%;
-	padding-left: 5em;
-	background: #fcd0e5;
+	background: url("images/nav_background.png");
 }
 
-footer div {
-	display: table;
-	margin:  0 auto;
-	padding: 50px 0;
-	width:   940px;
-	color:   #AEB6BF;
-}
-footer div section {
-	display: table-cell;
-	width:   400px;
-}
-footer div #Acerca {
-	font-style: italic;
-	text-align: center;
-}
+	nav ul {
+		margin:     0 auto;
+		width:      940px;
+		list-style: none;
+	}
 
-footer h2 {
-	color:#EBEDEF;
-}
-	
-footer a {
-	color: #999;
-}
-	
-footer ul {
-	margin:     0 0 0 40px;
-	list-style: square;
-	color:      #565656;
-  font-style: italic;
-}
-	
-footer ul li a {
-	display: block;
-}
-footer h3 {
-	color:#777;
-	font-style: italic;
-	font-size: 23px;
-}
+		nav ul li {
+			float: left;
+		}
+		
+			nav ul li a {
+				display:         block;
+				margin-right:    30px;
+				width:           280px;
+				font-size:       18px;
+				line-height:     44px;
+				text-align:      center;
+				text-decoration: none;
+				color:           #777;
+				font-style: italic;
+			}
+			
 
+/*------------------------------
+	INTRODUCCION
+------------------------------*/
 #intro {
 	position:   relative;
 	margin-top: 10px;
@@ -148,22 +112,302 @@ footer h3 {
 }
 	
 #intro h4 {
-	padding:     0 0 22px 0;
+	padding:     0 0 2px 0;
 	font-weight: normal;
 	color:       #8a898a;
 	font-size: 20px;
 }
 	
-
 	
 #intro img {
 	position: absolute;
 	top:      0;
 	right:    0;
-	width:    653px;
+	width:    490px;
 	height:   100%;
 
 	/* Border-radius not implemented yet */
-	-moz-border-radius:    22px;
-	-webkit-border-radius: 22px;
+	-moz-border-radius:    40px;
+	-webkit-border-radius: 40px;
+}
+
+/*------------------------------
+AREA DE CONTENIDO Y PLANTILLA SIDEBAR
+------------------------------*/
+#content {
+	display: table;
+}
+
+#mainContent {
+	display:       table-cell;
+	width:         620px;
+	padding-right: 22px;
+}
+
+aside {
+	display:    table-cell;
+	width:      300px;
+	background: url("images/sidebar_background.png") top left;
+}
+
+/*------------------------------
+	BLOG POST
+------------------------------*/
+.blogPost header p, .blogPost header p a {
+		font-size:  14px;
+		font-style: italic;
+		color:      #777;
+	}
+	
+.blogPost header p a: hover {
+	text-decoration: none;
+	color:           #000;
+}
+
+.blogPost div {
+	/* Column-count not implemented yet */
+	-moz-column-count:    2;
+	-webkit-column-count: 2;
+	
+	/* Column-gap not implemented yet */
+	-moz-column-gap:    22px;
+	-webkit-column-gap: 22px;
+}
+	
+.blogPost img {
+	margin:             22px 0;
+	-webkit-box-shadow: 3px 3px 7px #777;
+}
+
+/*------------------------------
+	COMENTARIOS
+------------------------------*/
+#comments {
+	margin-top:  21px;
+	padding-top: 22px;
+	border-top:  1px solid #d7d7d7;
+}
+
+#comments article {
+	display: table;
+	padding: 22px;
+}
+	
+#comments article:nth-child(odd) {
+	padding:               21px;
+	background:            #E3E3E3;
+	border:                1px solid #d7d7d7;
+	-moz-border-radius:    11px;
+	-webkit-border-radius: 11px;
+}
+	
+#comments article header {
+	display:       table-cell;
+	width:         220px;
+	padding-right: 22px;
+}
+		
+#comments article header a {
+	display:     block;
+	font-weight: bold;
+	color:       #000;
+}
+			
+#comments article header a:hover {
+	text-decoration: none;
+}
+		
+#comments article p {
+	padding: 0;
+}
+
+/*------------------------------
+FORMULARIO DE COMENTARIOS
+------------------------------*/
+form {
+	margin-top:  21px;
+	padding-top: 22px;
+	border-top:  1px solid #d7d7d7;
+}
+
+form p {
+	display:       table;
+	margin-bottom: 22px;
+	padding:       0 22px;
+}
+
+form label {
+	display:        table-cell;
+	width:          140px;
+	padding-right:  20px;
+	text-align:     right;
+	font-weight:    bold;
+	vertical-align: top;
+}
+	
+form input[type="text"], form input[type="email"], form input[type="url"] {
+	display: table-cell;
+	width:   300px;
+	height:  20px;
+	border:  1px solid #d7d7d7;
+}
+		
+form textarea {
+	width:  300px;
+	height: 100px;
+	border: 1px solid #d7d7d7;
+}
+		
+form input[type="submit"] {
+	margin-left: 162px;
+}
+
+/*------------------------------
+	AREA LATERAL SIDEBAR
+------------------------------*/
+aside section {
+	margin:     22px 0 0 22px;
+	padding:    11px 22px;
+	background: url("images/sidebar_section_background.png") repeat-x;
+	
+	/* Border-radius not implemented yet */
+	-moz-border-radius:    11px;
+	-webkit-border-radius: 11px;
+}
+
+aside section ul {
+	margin:     0 0 0 22px;
+	list-style: none;
+}
+	
+aside section ul li a {
+	display:         block;
+	text-decoration: none;
+	color:           #000;
+}
+		
+aside section ul li a:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------
+	PIE DE PAGINA FOOTER
+------------------------------*/
+footer {
+	position:   absolute;
+	left:       0;
+	width:      100%;
+	background: #fcd0e5;
+}
+
+footer div {
+	display: table;
+	margin:  0 auto;
+	padding: 44px 0;
+	width:   940px;
+	color:   #AEB6BF;
+}
+	
+footer div section {
+	display: table-cell;
+	width:   300px;
+}
+		
+footer div #about, footer div #blogroll {
+	padding-right: 20px;
+	font-style: italic;
+}
+		
+footer h2 {
+	color:black;
+}
+
+footer h3{
+	color:#8a898a;
+	font-style: italic;
+	font-size: 23px;
+}
+	
+footer a {
+	color: #8a898a;
+}
+
+footer a:hover {
+	color:           #FFF;
+	text-decoration: none;
+}
+	
+footer ul {
+	margin:     0 0 0 40px;
+	list-style: square;
+	color:      #8a898a;
+	font-style: italic;
+}
+	
+footer ul li a {
+	display: block;
+}
+
+
+#lasWomens img{
+	width: 200px;
+	height: 200px;
+}
+
+#losMens img{
+	width: 200px;
+	height: 200px;
+}
+
+#losAccesorys img{
+	width: 200px;
+	height: 200px;
+}
+
+#lasWomens td{
+	text-align: center;
+	font-style: italic;
+	color: #777;
+}
+
+#losMens td{
+	text-align: center;
+	font-style: italic;
+	color: #777;}
+
+
+#losAccesorys td{
+	text-align: center;
+	font-style: italic;
+	color: #777;
+}
+
+/*TABLA CARRITO*/
+table{ 
+	width: 500px;
+	border-collapse: collapse;
+	background-color: white; 
+}
+th{
+	text-align: center;
+	color: black;
+	background-color: #f9eff7;
+}
+
+tr{
+	text-align: left;
+	color: #8a898a;
+	font-style: italic;
+}
+
+section.pos{
+	position:fixed;/*si es static no le afeccta top,bottom,left and right*/
+	bottom: 270px; /*con fixed el texto siempre estara en ese lugar sin importar si el cursor se mueve*/
+	right: 5px;
+		
+}
+
+section.pos a{
+	color: #8a898a;
+	font-size: 18px;
 }
